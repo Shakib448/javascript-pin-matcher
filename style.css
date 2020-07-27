@@ -34,6 +34,9 @@ body {
 
 input[type='text']{
     background-color: #3D4153;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
     padding: 10px 0px;
     width: 80%;
     margin: 0 auto;
