@@ -97,6 +97,7 @@ color: #E0B612;
     margin-top: 20px;
     border-radius: 15px;
     padding: 5px 20px;
+    visibility: hidden;
 }
 .notify-section{
     width: 35%;

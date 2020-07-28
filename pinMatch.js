@@ -9,17 +9,22 @@ function removeNumbers() {
   document.getElementById("numberKeypad").value = number.substring(0, number.length - 1)
 }
 
+// Valid pin code  
+
 function validPinCode() {
-  const generate =  document.getElementById('generatePin').value;
+  const generate = document.getElementById('generatePin').value;
   const numberPad = document.getElementById('numberKeypad').value;
 
   const regex = /^[0-9]{4}$/;
-  
-  if(regex.test(generate) == regex.test(numberPad)){
+
+  if (regex.test(generate) === regex.test(numberPad)) {
     alert("thanks for valid code");
-  }else if ((regex.test(generate) != regex.test(numberPad))){
+    document.getElementById('match').style.visibility = 'visible';
+  }
+  else if ((regex.test(generate) !== regex.test(numberPad))) {
     alert("sorry the code is not matched")
-  }else{
-    return "something is went wrong";
+    document.getElementById('not-match').style.visibility = 'visible';
   }
 }
+
+// Submission result
