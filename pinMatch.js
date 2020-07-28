@@ -18,11 +18,9 @@ function validPinCode() {
   const regex = /^[0-9]{4}$/;
 
   if (regex.test(generate) === regex.test(numberPad)) {
-    alert("thanks for valid code");
     document.getElementById('match').style.visibility = 'visible';
   }
   else if ((regex.test(generate) !== regex.test(numberPad))) {
-    alert("sorry the code is not matched")
     document.getElementById('not-match').style.visibility = 'visible';
   }
 }
