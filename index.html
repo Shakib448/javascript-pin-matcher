@@ -57,7 +57,9 @@
                             </div>
                             <div>
                                 <button type="submit" class="submit-btn" onclick="validPinCode()">Submit</button>
-                                <p class="action-left">3 try left</p>
+                                <p class="action-left"><span id="btn-negative-count">3</span> try left</p>
+                                <input type="button" value="Count" id="countButton" />
+                                <p>The button was pressed <span id="displayCount">3</span> times.</p>
                             </div>
                         </div>
                     </div>
@@ -68,6 +70,7 @@
                 <p class="notify" id="match">✅ Pin Matched... Secret door is opening for you</p>
             </div>
         </div>
+        
         <script src="pinMatch.js"></script>
 
 </body>
