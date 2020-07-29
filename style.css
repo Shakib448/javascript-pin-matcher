@@ -27,6 +27,7 @@ body {
     font-size: 20px;
     text-align: center;
 }
+
 .generate-btn:focus{
     outline: none;
     box-shadow: none;
@@ -81,10 +82,16 @@ vertical-align: middle;
 margin-right: -4px;
 border-radius: 10px;
 cursor: pointer;
+transition: .5s;
 }
 .blink-me {
 color: #E0B612;
 }
+
+.button:hover {
+    background: aqua;
+  }
+
 .submit-btn {
     border: none;
     margin-top: 20px;
@@ -92,6 +99,11 @@ color: #E0B612;
     border-radius: 5px;
     background: #495BC3;
     color: #fff;
+    transition: .5s;
+}
+
+.submit-btn:hover{
+    background: aqua;
 }
 .notify {
     color: #fff;
