@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="pin-generator half-width">
-                    <input class="form-control" type="text" id="generatePin">
+                    <input class="form-control" type="text" id="generatePin" disabled>
                     <button class="generate-btn" onclick="generatePin()">Generate Pin</button>
                 </div>
             </div>
@@ -56,7 +56,7 @@
                                 <div class="button" onclick="document.getElementById('numberKeypad').value = ''">C</div>
                             </div>
                             <div>
-                                <button type="submit" class="submit-btn" id="disableBtn" onclick="validPinCode()">Submit</button>
+                                <button type="submit" class="submit-btn"  onclick="validPinCode()">Submit</button>
                                 <p class="action-left"><span id="btn-negative-count">3</span> try left</p>
                             </div>
                         </div>

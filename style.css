@@ -64,6 +64,10 @@ color: #fff;
 width: 100%;
 }
 
+.form-control:disabled{
+    background-color: #3D4153;
+}
+
 .button {
 width: 20%;
 background: #425062;

@@ -9,14 +9,14 @@ function removeNumbers() {
   document.getElementById("numberKeypad").value = number.substring(0, number.length - 1)
 }
 
-// Valid pin code  
+// Valid pin code  function
 
 function validPinCode() {
   const generate = document.getElementById('generatePin').value;
   const numberPad = document.getElementById('numberKeypad').value;
 
   if(generate == ""){
-    alert("Please set your input")
+    alert("First generate your pin number")
   }else if (generate == numberPad) {
     document.getElementById('match').style.visibility = 'visible';
   }else if (generate != numberPad) {
@@ -27,31 +27,13 @@ function validPinCode() {
 
 // Submission Button
 
-// function negBtn() {
-//   let count = 0;
-//   let button = document.getElementById("btnCount");
-//   let display = document.getElementById("btn-negative-count");
-
-//   button.onclick = function () {
-//     if (count < 0) {
-//       count--;
-//       display.innerText = count;
-//       button.disabled = true;
-//       console.log('this is disabled')
-//     }
-//   }
-
-// }
-
-
-
-var count = 3;
+let count = 3;
 function clickFunc() {
     count--;
     document.getElementById('btn-negative-count').innerHTML = count;
-    var btn = document.querySelector('disableBtn');
+    let btn = document.querySelector('button.submit-btn');
 
-    if(count <= 3) {
+    if(count == 0) {
         btn.disabled = true;
     }
 }
