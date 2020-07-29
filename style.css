@@ -1,10 +1,12 @@
-*{
+* {
     box-sizing: border-box;
 }
+
 body {
     background: #10101B;
     height: 100vh;
 }
+
 .container {
     margin-top: 30px;
 }
@@ -15,7 +17,8 @@ body {
     padding: 30px;
     text-align: center;
 }
-.generate-btn{
+
+.generate-btn {
     margin-top: 140px;
     width: 180px;
     padding: 50px;
@@ -28,12 +31,12 @@ body {
     text-align: center;
 }
 
-.generate-btn:focus{
+.generate-btn:focus {
     outline: none;
     box-shadow: none;
 }
 
-input[type='text']{
+input[type='text'] {
     background-color: #3D4153;
     color: #fff;
     font-size: 30px;
@@ -45,52 +48,55 @@ input[type='text']{
     height: 50px;
     padding: 10px;
 }
+
 input[type='text']:focus {
     background-color: #3D4153;
     color: #fff;
     font-size: 20px;
 }
+
 .numbers {
     margin: 30px 0;
 }
 
 .calc-typed {
-margin-top: 20px;
-font-size: 45px;
-text-align: right;
-color: #fff;
+    margin-top: 20px;
+    font-size: 45px;
+    text-align: right;
+    color: #fff;
 }
 
 .calc-button-row {
-width: 100%;
+    width: 100%;
 }
 
-.form-control:disabled{
+.form-control:disabled {
     background-color: #3D4153;
 }
 
 .button {
-width: 20%;
-background: #425062;
-color: #fff;
-padding: 20px 0;
-margin: 5px;
-display: inline-block;
-font-size: 25px;
-text-align: center;
-vertical-align: middle;
-margin-right: -4px;
-border-radius: 10px;
-cursor: pointer;
-transition: .5s;
+    width: 20%;
+    background: #425062;
+    color: #fff;
+    padding: 20px 0;
+    margin: 5px;
+    display: inline-block;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: -4px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
 }
+
 .blink-me {
-color: #E0B612;
+    color: #E0B612;
 }
 
 .button:hover {
     background: aqua;
-  }
+}
 
 .submit-btn {
     border: none;
@@ -99,12 +105,9 @@ color: #E0B612;
     border-radius: 5px;
     background: #495BC3;
     color: #fff;
-    transition: .5s;
 }
 
-.submit-btn:hover{
-    background: aqua;
-}
+
 .notify {
     color: #fff;
     text-align: center;
@@ -115,10 +118,12 @@ color: #E0B612;
     padding: 5px 20px;
     visibility: hidden;
 }
-.notify-section{
+
+.notify-section {
     width: 35%;
     margin: 0 auto;
 }
+
 .action-left {
     color: #FF3C5F;
     margin-top: 10px;
