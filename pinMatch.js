@@ -25,10 +25,9 @@ function validPinCode() {
   }
 }
 
-// Submission Button
+// Submission and Button Reload
 
 let count = 3;
-
 
 function clickFunc() {
   count--;
