@@ -15,26 +15,40 @@ function validPinCode() {
   const generate = document.getElementById('generatePin').value;
   const numberPad = document.getElementById('numberKeypad').value;
 
-  if(generate == ""){
+  if (generate == "") {
     alert("First generate your pin number")
-  }else if (generate == numberPad) {
+  } else if (generate == numberPad) {
     document.getElementById('match').style.visibility = 'visible';
-  }else if (generate != numberPad) {
+  } else if (generate != numberPad) {
     document.getElementById('not-match').style.visibility = 'visible';
     clickFunc();
   }
 }
 
-// Submission Button
+// Submission and Button Reload
 
 let count = 3;
-function clickFunc() {
-    count--;
-    document.getElementById('btn-negative-count').innerHTML = count;
-    let btn = document.querySelector('button.submit-btn');
 
-    if(count == 0) {
-        btn.disabled = true;
+function clickFunc() {
+  count--;
+  document.getElementById('btn-negative-count').innerHTML = count;
+  let btn = document.querySelector('button.submit-btn');
+  if (count == 0) {
+    btn.disabled = true;
+
+    let timeLeft = 10;
+    let elem = document.getElementById('disableRecoveryTimer');
+    let timerId = setInterval(countdown, 1000);
+
+    function countdown() {
+      if (timeLeft == -1) {
+        clearTimeout(timerId);
+        location.reload();
+      } else {
+        elem.innerHTML = timeLeft + ' seconds remaining';
+        timeLeft--;
+      }
     }
+  }
 }
 
