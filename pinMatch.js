@@ -19,8 +19,11 @@ function validPinCode() {
     alert("First generate your pin number")
   } else if (generate == numberPad) {
     document.getElementById('match').style.visibility = 'visible';
+    document.getElementById('not-match').style.visibility = 'hidden';
+
   } else if (generate != numberPad) {
     document.getElementById('not-match').style.visibility = 'visible';
+    document.getElementById('match').style.visibility = 'hidden';
     clickFunc();
   }
 }
